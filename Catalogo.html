@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Catálogo de Libros</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.ico.jpeg">
+</head>
+<body>
+    <header>
+        <h1>Catálogo de Libros</h1>
+        <nav>
+            <label for="genreSelect">Seleccionar Género:</label>
+            <select id="genreSelect">
+                <option value="Todos">Todos</option>
+                <option value="Ficción">Ficción</option>
+                <option value="No Ficción">No Ficción</option>
+            </select>
+            <input type="text" id="searchInput" placeholder="Buscar por título">
+            <button id="searchButton">Buscar</button>
+        </nav>
+    </header>
+    <div id="bookList">
+        <!-- Aquí se mostrarán los libros -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
