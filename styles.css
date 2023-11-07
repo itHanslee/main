@@ -71,7 +71,7 @@ footer {
   background-color: #d8a399; /* Fondo melocotón claro */
   color: #fff;
   text-align: center;
-  padding: 10px;
+  padding: 33px;
   border-top-left-radius: 10px; /* Bordes redondeados en la esquina superior izquierda */
   border-top-right-radius: 10px; /* Bordes redondeados en la esquina superior derecha */
 }
@@ -79,14 +79,13 @@ footer {
 /* Estilo de los elementos dentro de las secciones */
 .featured-books, .catalog, .authors {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 /* Estilo de las tarjetas de libros destacados */
 .book-card {
   width: 30%;
-  margin: 10px 0;
+  margin: 10px 10px;
   padding: 20px;
   border: 1px solid #ddd;
   background-color: #f9f9f9; /* Fondo gris claro para las tarjetas de libros */
@@ -179,7 +178,7 @@ textarea {
 }
 
 button {
-  background-color: #333;
+  background-color:#d8a399;
   color: #fff;
   border: none;
   padding: 10px 20px;
