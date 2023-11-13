@@ -1,5 +1,5 @@
-hamburguer = Document.querySelector(".pastel");
-hamburguer.onclick = function () {
-    navbar = document.querySelector(".nav-bar");
-    navbar.classlist.toggle("active");
+hamburger = document.querySelector(".hamburger");
+hamburger.onclick = function () {
+    navBar = document.querySelector(".nav-Bar");
+    navBar.classlist.toggle("active");
 }
