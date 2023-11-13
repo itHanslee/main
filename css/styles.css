@@ -1,0 +1,185 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Arial", sans-serif;
+  box-sizing: border-box;
+}
+body {
+background: #d8a399;
+}
+/* Estilo del encabezado */
+header {
+width: 100%;
+height: 80px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 100px;
+}
+.logo{
+  font-size: 28px;
+  font-weight: bold;
+  color: #fefefe;
+}
+.pastel{
+  display: none;
+}
+.nav-bar ul {
+  display: flex;
+}
+.nav-bar ul li a {
+  display: block;
+  color: #fefefe;
+  font-size: 20px;
+  padding: 10px 25px;
+  border-radius: 50px;
+  transition: 0.2s;
+  margin: 0 5px; 
+}
+
+.nav-bar ul li a:hover {
+  color: #7d584f; /* Cambio de color al pasar el mouse a otro color */
+  background: #fefefe;
+}
+.nav-bar ul li a.active {
+  color: #11101b;
+  background: #fefefe;
+}
+
+@media only screen and (max-width : 1320px) {
+header { padding: 0 50px;
+}
+}
+@media only screen and (max-width : 1100px) {
+header { padding: 0 50px;
+}
+}
+@media only screen and (max-width : 900px) {
+.pastel { display: block;
+  cursor: pointer;
+}
+.hamburguer {
+  width: 30px;
+  height: 3px;
+  background: #fefefe;
+  margin: 6px;
+}
+.nav-bar{
+  height: 0;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  width: 100%vw;
+  background: fixed;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.nav-bar.active{
+  height: 450px;
+}
+.nav-bar ul {
+  display: block;
+  width: fit-content;
+  margin: 80px auto 0 auto;
+  text-align: center;
+  transition: 0.2s;
+  opacity: 0;
+}
+.nav-bar.active ul{
+  opacity: 1;
+
+}
+.nav-bar ul li a {
+  margin-bottom: 12px;
+}
+}
+
+
+/* Estilo de las secciones */
+section {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff; /* Fondo blanco */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+section h2 {
+  font-size: 24px;
+  margin: 10px 0;
+  color: #7d584f; /* Color de título para las secciones */
+  text-transform: uppercase; /* Texto en mayúsculas */
+}
+
+/* Estilo del pie de página */
+footer {
+  background-color: #d8a399; /* Fondo melocotón claro */
+  color: #fff;
+  text-align: center;
+  padding: 33px;
+  border-top-left-radius: 10px; /* Bordes redondeados en la esquina superior izquierda */
+  border-top-right-radius: 10px; /* Bordes redondeados en la esquina superior derecha */
+}
+
+/* Estilo de los elementos dentro de las secciones */
+.featured-books, .catalog, .authors {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Estilo de las tarjetas de libros destacados */
+.book-card {
+  width: 30%;
+  margin: 10px 10px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9; /* Fondo gris claro para las tarjetas de libros */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  text-align: center;
+}
+
+
+.book-card:hover {
+  transform: translateY(-5px);
+}
+
+.book-card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #7d584f; /* Color de título para las tarjetas de libros */
+  text-transform: uppercase; /* Texto en mayúsculas */
+}
+
+.book-card p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+button {
+  background-color:#d8a399;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: black;
+}
+
+
+/* Estilo de los botones */
+button {
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+  margin: 0 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+}

@@ -1,0 +1,77 @@
+/* Estilo del cuerpo y fuente principal */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f4ec; /* Fondo beige claro */
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Estilo del encabezado */
+  header {
+    background-color: #d8a399; /* Fondo melocotón claro */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  header h1 {
+    font-size: 36px;
+  }
+  
+  /* Estilo de la barra de navegación */
+  nav {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #d8a399; /* Fondo melocotón claro */
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline;
+    margin: 0 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.2s;
+  }
+  
+  nav a:hover {
+    color: #7d584f; /* Cambio de color al pasar el mouse a otro color */
+  }
+  
+  /* Estilo de las secciones */
+  section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff; /* Fondo blanco */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Bordes redondeados */
+  }
+  
+  section h2 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #7d584f; /* Color de título para las secciones */
+    text-transform: uppercase; /* Texto en mayúsculas */
+  }
+  
+  /* Estilo del pie de página */
+  footer {
+    background-color: #d8a399; /* Fondo melocotón claro */
+    color: #fff;
+    text-align: center;
+    padding: 33px;
+    border-top-left-radius: 10px; /* Bordes redondeados en la esquina superior izquierda */
+    border-top-right-radius: 10px; /* Bordes redondeados en la esquina superior derecha */
+  }
