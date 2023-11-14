@@ -1,30 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <title>Palabras con Propósito</title>
     <link rel="stylesheet" type="text/css" href="css/inicio.css">
     <link rel="icon" href="imagen/logo.ico.jpeg">
 </head>
 <body>
-    <section class="login">
-        <h2>Iniciar Sesión</h2>
-        <form>
-            <label for="correo">Correo Electrónico:</label>
-            <input type="email" id="correo" name="correo" required>
-
-            <label for="contrasena">Contraseña:</label>
-            <input type="password" id="contrasena" name="contrasena" required>
-
-            <button class="login-button">Iniciar Sesión</button>
-            <button class="register-button" onclick="window.location.href='registro.html';">Registrarse</button>
+    <section>
+   <div class="login-box"> 
+        <form action="">
+            <h2>Inicia sesion</h2>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                <input type="email" required>
+                <label>Correo</label> 
+            </div>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                <input type="password" required>
+                <label>Contraseña</label> 
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox"> Recuerdame
+                </label>
+                <a href="#">Has olvidado tu contraseña</a>
+            </div>
+            <button type="submit">Iniciar sesion</button>
+            <div class="register-link">
+                <p>No tienes una cuenta? <a 
+                href="registro.html">Registrate</a></p>
+            </div>
         </form>
-    </section>
-    <footer>
-        <div class="social-links">
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">Instagram</a>
-        </div>
-    </footer>
+    </div>
+     </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

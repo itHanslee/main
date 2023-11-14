@@ -1,155 +1,151 @@
-/* Estilo del cuerpo y fuente principal */
-body {
-  font-family: 'Arial', sans-serif;
+*{
   margin: 0;
   padding: 0;
-  background-color: #f8f4ec; /* Fondo beige claro */
-  color: #333;
-  line-height: 1.6;
-}
-
-/* Estilo del encabezado */
-header {
-  background-color: #d8a399; /* Fondo melocotón claro */
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-header h1 {
-  font-size: 36px;
-}
-
-/* Estilo de la barra de navegación */
-nav {
-  text-align: center;
-  margin-top: 20px;
-  background-color: #d8a399; /* Fondo melocotón claro */
-  padding: 10px 0;
-}
-
-nav ul {
   list-style: none;
-  padding: 0;
-}
-
-nav li {
-  display: inline;
-  margin: 0 20px;
-}
-
-nav a {
   text-decoration: none;
-  color: #333;
-  font-size: 16px;
-  transition: color 0.2s;
+  font-family: "Arial", sans-serif;
+  box-sizing: border-box;
 }
 
-nav a:hover {
-  color: #7d584f; /* Cambio de color al pasar el mouse a otro color */
-}
-
-/* Estilo de las secciones */
 section {
-  margin: 20px;
-  padding: 20px;
-  background-color: #fff; /* Fondo blanco */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px; /* Bordes redondeados */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: url('gojo.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  animation: animateBg 5s linear infinite;
 }
 
-section h2 {
-  font-size: 24px;
-  margin: 10px 0;
-  color: #7d584f; /* Color de título para las secciones */
-  text-transform: uppercase; /* Texto en mayúsculas */
+@keyframes animatebg {
+  100%{
+    filter: hue-rotate(360eg);
+  }
 }
 
-/* Estilo del pie de página */
-footer {
-  background-color: #d8a399; /* Fondo melocotón claro */
+.login-box {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: #d8a399;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+  }
+
+h2 {
+font-size: 2em;
+color: #fff;
+text-align: center;
+}
+.input-box {
+  position: relative;
+  width: 310px;
+  margin: 30px 0;
+  border-bottom: 2px solid #fff;
+}
+
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 1em;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+  top: -5px;
+}
+
+.input-box input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: #fff;
+  padding: 0 35px 0 5px;
+}
+
+.input-box .icon {
+  position: absolute;
+  right: 8px;
+  color: #fff;
+  font-size: 1,2em;
+  line-height: 57px;
+}
+
+.remember-forgot {
+  margin: -15px 0 15px;
+  font-size: .9em;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.remember-forgot label input {
+  margin-right: 3px;
+}
+
+.remember-forgot a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+button {
+width: 100%;
+height: 40px;
+background: #fff;
+border: none;
+outline: none;
+border-radius: 40px;
+cursor: pointer;
+font-size: 1em;
+color: #000;
+font-weight: 500;
+}
+
+.register-link{
+  font-size: .9em;
   color: #fff;
   text-align: center;
-  padding: 33px;
-  border-top-left-radius: 10px; /* Bordes redondeados en la esquina superior izquierda */
-  border-top-right-radius: 10px; /* Bordes redondeados en la esquina superior derecha */
+  margin: 25px 0 10px;
 }
 
-/* Estilo de la sección de inicio de sesión y registro */
-.login {
-    max-width: 400px;
-    margin: 144px auto;
-    padding: 20px;
-    background-color: #f8f4ec; /* Fondo beige claro */
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    text-align: center; /* Centra el contenido */
-  }
-  
-  .login h2 {
-    font-size: 24px;
-    margin: 0 0 20px;
-    color: #7d584f; /* Color de título para la sección */
-  }
-  
-  .login form label {
-    display: block;
-    font-weight: bold;
-    color: #7d584f; /* Color de etiquetas de formulario */
-    margin-top: 10px;
-    text-align: left; /* Alinea el texto a la izquierda */
-  }
-  
-  .login form input[type="email"],
-  .login form input[type="password"] {
-    width: 90%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin: 5px 0; /* Espacio uniforme alrededor de los campos */
-  }
-  
-  .login form .login-button,
-  .login form .register-button {
-    background-color: #7d584f; /* Fondo color marrón claro */
-    color: #fff;
+.register-link p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link p a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 360px)  {
+  .login-box {
+    width: 100%;
+    height: 100vh;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 15px; /* Espacio superior para separar los botones */
-    text-transform: uppercase; /* Texto en mayúsculas */
+    border-radius: 0;
   }
-  
-  .login form .login-button:hover,
-  .login form .register-button:hover {
-    background-color: #4d362f; /* Cambio de color al pasar el mouse a otro color */
+
+  .input-box{
+    width: 290px;
   }
-  
-  .login form p {
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  .login form a {
-    text-decoration: none;
-    color: #7d584f; /* Color de enlaces */
-    font-weight: bold;
-  }
-  
-  .login form a:hover {
-    color: #4d362f; /* Cambio de color al pasar el mouse a otro color */
-  }
-  
-  /* Estilo de los botones */
-  button {
-    display: inline-block;
-    text-align: center;
-    font-size: 16px;
-    margin: 0 10px;
-    padding: 10px 20px;
-    cursor: pointer;
-    text-transform: uppercase;
-  }
+}
+
