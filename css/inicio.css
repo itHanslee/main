@@ -7,13 +7,24 @@
   box-sizing: border-box;
 }
 
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
 section {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100vh;
-  background: url('gojo.jpg') no-repeat;
   background-size: cover;
   background-position: center;
   animation: animateBg 5s linear infinite;
@@ -29,7 +40,7 @@ section {
     position: relative;
     width: 400px;
     height: 450px;
-    background: #d8a399;
+    background: transparent;
     border: 2px solid rgba(255, 255, 255, .5);
     border-radius: 20px;
     display: flex;
@@ -40,14 +51,14 @@ section {
 
 h2 {
 font-size: 2em;
-color: #fff;
+color: #000;
 text-align: center;
 }
 .input-box {
   position: relative;
   width: 310px;
   margin: 30px 0;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #000;
 }
 
 .input-box label {
@@ -56,7 +67,7 @@ text-align: center;
   left: 5px;
   transform: translateY(-50%);
   font-size: 1em;
-  color: #fff;
+  color: #000;
   pointer-events: none;
   transition: .5s;
 }
@@ -73,14 +84,14 @@ text-align: center;
   border: none;
   outline: none;
   font-size: 1em;
-  color: #fff;
+  color: #000;
   padding: 0 35px 0 5px;
 }
 
 .input-box .icon {
   position: absolute;
   right: 8px;
-  color: #fff;
+  color: #000;
   font-size: 1,2em;
   line-height: 57px;
 }
@@ -88,7 +99,7 @@ text-align: center;
 .remember-forgot {
   margin: -15px 0 15px;
   font-size: .9em;
-  color: #fff;
+  color: #000;
   display: flex;
   justify-content: space-between;
 }
@@ -98,7 +109,7 @@ text-align: center;
 }
 
 .remember-forgot a {
-  color: #fff;
+  color: #000;
   text-decoration: none;
 }
 
@@ -121,13 +132,13 @@ font-weight: 500;
 
 .register-link{
   font-size: .9em;
-  color: #fff;
+  color: #000;
   text-align: center;
   margin: 25px 0 10px;
 }
 
 .register-link p a {
-  color: #fff;
+  color: #000;
   text-decoration: none;
   font-weight: 600;
 }
