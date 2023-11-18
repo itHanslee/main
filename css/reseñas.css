@@ -48,7 +48,7 @@ body{
     padding: 2rem;
     display: grid;
     gap: 1rem;
-    background-color: #ffffff;
+    background-color: #d8a399;
     border-radius: 5px;
     box-shadow: 5px 5px 30px black;
     cursor: pointer;
@@ -56,7 +56,6 @@ body{
 
 .card i{
     font-size: 2.5rem;
-    color: gold;
 }
 
 .card p{
@@ -95,7 +94,7 @@ body{
     margin-bottom: 1rem;
 }
 
-.footer{
+.footer p{
     max-width: 450px;
     margin: auto;
     font-size: 0.9rem;
@@ -110,7 +109,20 @@ body{
     font-size: 0.8rem;
     font-weight: 600;
     color: #ffffff;
-    background-color: #1a2c50;
+    background-color: #d8a399;
     border-radius: 5px;
     cursor: pointer;
 }
+
+@media (width < 900px){
+    .testimonial__grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (width < 600px) {
+    .testimonial__grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
