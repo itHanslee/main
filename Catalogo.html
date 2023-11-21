@@ -1,218 +1,374 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Catálogo de Libros</title>
-    <link rel="stylesheet" href="css/catalogo.css">
-    <link rel="icon" href="imagen/logo.ico.jpeg">
-    <script src="js/catalogo.js"></script>
-    <link rel="stylesheet" href="css/catalogo.css">
-</head>
-<body>
-    <header>
-        <h1>Catálogo de Libros</h1>
-        <nav>
-            <label for="genreSelect">Seleccionar Género:</label>
-            <select id="genreSelect" onchange="redirectToGenrePage(this)">
-                <option value="Todos">Todos</option>
-                <option value="Ficcion">Ficción</option>
-                <option value="NoFiccion">No Ficción</option>
-                <option value="Aventura">Aventura</option>
-                <option value="Misterio">Misterio</option>
-                <option value="Romance">Romance</option>
-                <option value="CienciaFiccion">Ciencia Ficción</option>
-                <option value="Fantasia">Fantasía</option>
-                <option value="Biografia">Biografía</option>
-                <option value="Historia">Historia</option>
-            </select>
-        </nav>
-    </header>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Category Filter in JS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/catalogo.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        
+        <div class = "main-container">
+            <h2>News Categories</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, velit.</p>
+            <div class = "filter-container">
+                <div class = "category-head">
+                    <ul>
+                        <div class = "category-title active" id = "all">
+                            <li>todos</li>
+                            <span><i class = "fas fa-border-all"></i></span>
+                        </div>
+                        <div class = "category-title" id = "culture">
+                            <li>Ciencia ficcion</li>
+                            <span><i class = "fas fa-theater-masks"></i></span>
+                        </div>
+                        <div class = "category-title" id = "politics">
+                            <li>Historia</li>
+                            <span><i class = "fas fa-landmark"></i></span>
+                        </div>
+                        <div class = "category-title" id = "finance">
+                            <li>Terror</li>
+                            <span><i class = "fas fa-chart-area"></i></span>
+                        </div>
+                        <div class = "category-title" id = "business">
+                            <li>romance</li>
+                            <span><i class = "fas fa-coins"></i></span>
+                        </div>
+                        <div class = "category-title" id = "sports">
+                            <li>aventura</li>
+                            <span><i class = "fas fa-running"></i></span>
+                        </div>
+                    </ul>
+                </div>
 
-    <div class="book-container">
-        <!-- Columna 1 - Ficción -->
-        <section class="book-section">
-            <!-- Libro 1 - Ficción -->
-            <img src="imagen/animales.jpg" alt="Libro 1" class="book-image">
-            <div class="book-info">
-                <h2>animales fantasticos y donde encontrarlos</h2>
-                <p>	Editorial:Publicaciones y Ediciones Salamandra S.A.</p>
-                <p>Precio: $70.000</p>
+                <div class = "posts-collect">
+                    <div class = "posts-main-container">
+                        <!-- single post -->
+                        <div class = "all business">
+                            <div class = "post-img">
+                                <img src = "images/business-1.jpg" alt = "post">
+                                <span class = "category-name">romance</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                    <span>
+                                        <i class = "fas fa-comment"></i>34
+                                    </span>
+                                </div>
+                                <h2>Lorem ipsum dolor sit amet</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!</p>
+                            </div>
+                            <button type = "button" class = "read-btn">Read All</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all business">
+                            <div class = "post-img">
+                                <img src = "images/business-2.jpg" alt = "post">
+                                <span class = "category-name">romance</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                    <span>
+                                        <i class = "fas fa-comment"></i>34
+                                    </span>
+                                </div>
+                                <h2>Lorem ipsum dolor sit amet</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!</p>
+                            </div>
+                            <button type = "button" class = "read-btn">Read All</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all business">
+                            <div class = "post-img">
+                                <img src = "images/business-3.jpg" alt = "post">
+                                <span class = "category-name">romance</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                    <span>
+                                        <i class = "fas fa-comment"></i>34
+                                    </span>
+                                </div>
+                                <h2>Lorem ipsum dolor sit amet</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!</p>
+                            </div>
+                            <button type = "button" class = "read-btn">Read All</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all culture">
+                            <div class = "post-img">
+                                <img src = "images/culture-1.jpg" alt = "post">
+                                <span class = "category-name">culture</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                    <span>
+                                        <i class = "fas fa-comment"></i>34
+                                    </span>
+                                </div>
+                                <h2>Lorem ipsum dolor sit amet</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!</p>
+                            </div>
+                            <button type = "button" class = "read-btn">Read All</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all culture">
+                            <div class = "post-img">
+                                <img src = "images/culture-2.jpg" alt = "post">
+                                <span class = "category-name">culture</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                    <span>
+                                        <i class = "fas fa-comment"></i>34
+                                    </span>
+                                </div>
+                                <h2>Lorem ipsum dolor sit amet</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!</p>
+                            </div>
+                            <button type = "button" class = "read-btn">Read All</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all culture">
+                            <div class = "post-img">
+                                <img src = "images/culture-3.jpg" alt = "post">
+                                <span class = "category-name">culture</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                    <span>
+                                        <i class = "fas fa-comment"></i>34
+                                    </span>
+                                </div>
+                                <h2>Lorem ipsum dolor sit amet</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!</p>
+                            </div>
+                            <button type = "button" class = "read-btn">Read All</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all culture">
+                            <div class = "post-img">
+                                <img src = "images/culture-4.jpg" alt = "post">
+                                <span class = "category-name">culture</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                    <span>
+                                        <i class = "fas fa-comment"></i>34
+                                    </span>
+                                </div>
+                                <h2>Lorem ipsum dolor sit amet</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!</p>
+                            </div>
+                            <button type = "button" class = "read-btn">Read All</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all finance">
+                            <div class = "post-img">
+                                <img src = "imagen/king.webp" alt = "post">
+                                <span class = "category-name">terror</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                    <span>
+                                        <i class = "fas fa-comment"></i>34
+                                    </span>
+                                </div>
+                                <h2>Lorem ipsum dolor sit amet</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!</p>
+                            </div>
+                            <button type = "button" class = "read-btn">Read All</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all finance">
+                            <div class = "post-img">
+                                <img src = "images/finance-2.jpg" alt = "post">
+                                <span class = "category-name">terror</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                    <span>
+                                        <i class = "fas fa-comment"></i>34
+                                    </span>
+                                </div>
+                                <h2>Lorem ipsum dolor sit amet</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!</p>
+                            </div>
+                            <button type = "button" class = "read-btn">Read All</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all finance">
+                            <div class = "post-img">
+                                <img src = "images/finance-3.jpg" alt = "post">
+                                <span class = "category-name">terror</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                    <span>
+                                        <i class = "fas fa-comment"></i>34
+                                    </span>
+                                </div>
+                                <h2>Lorem ipsum dolor sit amet</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!</p>
+                            </div>
+                            <button type = "button" class = "read-btn">Read All</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all politics">
+                            <div class = "post-img">
+                                <img src = "images/politics-1.jpg" alt = "post">
+                                <span class = "category-name">politics</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                    <span>
+                                        <i class = "fas fa-comment"></i>34
+                                    </span>
+                                </div>
+                                <h2>Lorem ipsum dolor sit amet</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!</p>
+                            </div>
+                            <button type = "button" class = "read-btn">Read All</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all politics">
+                            <div class = "post-img">
+                                <img src = "images/politics-2.jpg" alt = "post">
+                                <span class = "category-name">politics</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                    <span>
+                                        <i class = "fas fa-comment"></i>34
+                                    </span>
+                                </div>
+                                <h2>Lorem ipsum dolor sit amet</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!</p>
+                            </div>
+                            <button type = "button" class = "read-btn">Read All</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all politics">
+                            <div class = "post-img">
+                                <img src = "images/politics-3.jpg" alt = "post">
+                                <span class = "category-name">politics</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                    <span>
+                                        <i class = "fas fa-comment"></i>34
+                                    </span>
+                                </div>
+                                <h2>Lorem ipsum dolor sit amet</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!</p>
+                            </div>
+                            <button type = "button" class = "read-btn">Read All</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all politics">
+                            <div class = "post-img">
+                                <img src = "images/politics-4.jpg" alt = "post">
+                                <span class = "category-name">politics</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                    <span>
+                                        <i class = "fas fa-comment"></i>34
+                                    </span>
+                                </div>
+                                <h2>Lorem ipsum dolor sit amet</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!</p>
+                            </div>
+                            <button type = "button" class = "read-btn">Read All</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all sports">
+                            <div class = "post-img">
+                                <img src = "images/sports-1.jpg" alt = "post">
+                                <span class = "category-name">sports</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                    <span>
+                                        <i class = "fas fa-comment"></i>34
+                                    </span>
+                                </div>
+                                <h2>Lorem ipsum dolor sit amet</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!</p>
+                            </div>
+                            <button type = "button" class = "read-btn">Read All</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all sports">
+                            <div class = "post-img">
+                                <img src = "images/sports-2.jpg" alt = "post">
+                                <span class = "category-name">sports</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                    <span>
+                                        <i class = "fas fa-comment"></i>34
+                                    </span>
+                                </div>
+                                <h2>Lorem ipsum dolor sit amet</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!</p>
+                            </div>
+                            <button type = "button" class = "read-btn">Read All</button>
+                        </div>
+                        <!-- end of single post -->
+                    </div>
+                </div>
             </div>
-        </section>
-
-        <!-- Columna 2 - No Ficción -->
-        <section class="book-section">
-            <!-- Libro 2 - No Ficción -->
-            <img src="imagen/solo.webp" alt="Libro 2" class="book-image">
-            <div class="book-info">
-                <h2>Hay Cosas Peores que Estar Solo. Fito Páez y Ciudad de Pobres Corazones</h2>
-                <p>Editorial:Gourmet Musical</p>
-                <p>Precio: $25.00</p>
-            </div>
-        </section>
-
-        <!-- Columna 3 - Aventura -->
-        <section class="book-section">
-            <!-- Libro 3 - Aventura -->
-            <img src="imagen/percy.webp" alt="Libro 3" class="book-image">
-            <div class="book-info">
-                <h2>El ladrón del rayo (Percy Jackson y los dioses del Olimpo 1)</h2>
-                <p>Editorial:Salamandra Infantil Y Juvenil</p>
-                <p>Precio: $145.700</p>
-            </div>
-        </section>
-
-        <!-- Columna 4 - Misterio -->
-        <section class="book-section">
-            <!-- Libro 4 - Misterio -->
-            <img src="imagen/king.webp" alt="Libro 4" class="book-image">
-            <div class="book-info">
-                <h2>El Misterio de Salem's Lot (Stephen King)</h2>
-                <p>Editorial:Debolsillo</p>
-                <p>Precio: $90.000</p>
-            </div>
-        </section>
-
-        <!-- Repite el mismo patrón para otras 7 columnas -->
-
-        <!-- Columna 5 - Romance -->
-        <section class="book-section">
-            <!-- Libro 5 - Romance -->
-            <img src="imagen/ventana.jpg" alt="Libro 5" class="book-image">
-            <div class="book-info">
-                <h2>A traves de mi ventana</h2>
-                <p>Editorial:Alfaguara</p>
-                <p>Precio: $100.000</p>
-            </div>
-        </section>
-
-        <!-- Columna 6 - Ciencia Ficción -->
-        <section class="book-section">
-            <!-- Libro 6 - Ciencia Ficción -->
-            <img src="imagen/marciano.jpg" alt="Libro 6" class="book-image">
-            <div class="book-info">
-                <h2>El marciano</h2>
-                <p>Editorial: Ediciones B</p>
-                <p>Precio: $120.000</p>
-            </div>
-        </section>
-
-        <!-- Columna 7 - Fantasía -->
-        <section class="book-section">
-            <!-- Libro 7 - Fantasía -->
-            <img src="imagen/principito.jpg" alt="Libro 7" class="book-image">
-            <div class="book-info">
-                <h2>El principito</h2>
-                <p>Editorial: Emecé</p>
-                <p>Precio: $15.000</p>
-            </div>
-        </section>
-
-        <!-- Columna 8 - Biografía -->
-        <section class="book-section">
-            <!-- Libro 8 - Biografía -->
-            <img src="imagen/rey.jpg" alt="Libro 8" class="book-image">
-            <div class="book-info">
-                <h2>edipto rey</h2>
-                <p>Editorial: Ediciones castillo</p>
-                <p>Precio: $33.000</p>
-            </div>
-        </section>
-    </div>
-    <div class="book-container">
-        <!-- Columna 1 - Ficción -->
-        <section class="book-section">
-            <!-- Libro 1 - Ficción -->
-            <img src="imagen/animales.jpg" alt="Libro 1" class="book-image">
-            <div class="book-info">
-                <h2>animales fantasticos y donde encontrarlos</h2>
-                <p>	Editorial:Publicaciones y Ediciones Salamandra S.A.</p>
-                <p>Precio: $70.000</p>
-            </div>
-        </section>
-
-        <!-- Columna 2 - No Ficción -->
-        <section class="book-section">
-            <!-- Libro 2 - No Ficción -->
-            <img src="imagen/solo.webp" alt="Libro 2" class="book-image">
-            <div class="book-info">
-                <h2>Hay Cosas Peores que Estar Solo. Fito Páez y Ciudad de Pobres Corazones</h2>
-                <p>Editorial:Gourmet Musical</p>
-                <p>Precio: $25.00</p>
-            </div>
-        </section>
-
-        <!-- Columna 3 - Aventura -->
-        <section class="book-section">
-            <!-- Libro 3 - Aventura -->
-            <img src="imagen/percy.webp" alt="Libro 3" class="book-image">
-            <div class="book-info">
-                <h2>El ladrón del rayo (Percy Jackson y los dioses del Olimpo 1)</h2>
-                <p>Editorial:Salamandra Infantil Y Juvenil</p>
-                <p>Precio: $145.700</p>
-            </div>
-        </section>
-
-        <!-- Columna 4 - Misterio -->
-        <section class="book-section">
-            <!-- Libro 4 - Misterio -->
-            <img src="imagen/king.webp" alt="Libro 4" class="book-image">
-            <div class="book-info">
-                <h2>El Misterio de Salem's Lot (Stephen King)</h2>
-                <p>Editorial:Debolsillo</p>
-                <p>Precio: $90.000</p>
-            </div>
-        </section>
-
-        <!-- Repite el mismo patrón para otras 7 columnas -->
-
-        <!-- Columna 5 - Romance -->
-        <section class="book-section">
-            <!-- Libro 5 - Romance -->
-            <img src="imagen/ventana.jpg" alt="Libro 5" class="book-image">
-            <div class="book-info">
-                <h2>A traves de mi ventana</h2>
-                <p>Editorial:Alfaguara</p>
-                <p>Precio: $100.000</p>
-            </div>
-        </section>
-
-        <!-- Columna 6 - Ciencia Ficción -->
-        <section class="book-section">
-            <!-- Libro 6 - Ciencia Ficción -->
-            <img src="imagen/marciano.jpg" alt="Libro 6" class="book-image">
-            <div class="book-info">
-                <h2>El marciano</h2>
-                <p>Editorial: Ediciones B</p>
-                <p>Precio: $120.000</p>
-            </div>
-        </section>
-
-        <!-- Columna 7 - Fantasía -->
-        <section class="book-section">
-            <!-- Libro 7 - Fantasía -->
-            <img src="imagen/principito.jpg" alt="Libro 7" class="book-image">
-            <div class="book-info">
-                <h2>El principito</h2>
-                <p>Editorial: Emecé</p>
-                <p>Precio: $15.000</p>
-            </div>
-        </section>
-
-        <!-- Columna 8 - Biografía -->
-        <section class="book-section">
-            <!-- Libro 8 - Biografía -->
-            <img src="imagen/rey.jpg" alt="Libro 8" class="book-image">
-            <div class="book-info">
-                <h2>edipto rey</h2>
-                <p>Editorial: Ediciones castillo</p>
-                <p>Precio: $33.000</p>
-            </div>
-        </section>
-    </div>
-
-    <footer>
-        <!-- Tu pie de página aquí -->
-    </footer>
-</body>
+        </div>
+        <script src = "js/catalogo.js"></script>
+    </body>
 </html>

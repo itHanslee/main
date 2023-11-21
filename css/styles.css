@@ -6,8 +6,11 @@
   font-family: "Arial", sans-serif;
   box-sizing: border-box;
 }
+
+
 body {
 background: #fefefe;
+
 }
 /* Estilo del encabezado */
 header {
@@ -184,3 +187,4 @@ button {
   cursor: pointer;
   text-transform: uppercase;
 }
+
