@@ -7,6 +7,9 @@
     <link rel="icon" href="imagen/logo.ico.jpeg">
     <script src="js/registro.js"></script>
 </head>
+<video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+    <source src="VID-20231121-WA0001.mp4" type="video/mp4">
+</video>
 <body>
     <div class="container">
         <form action="" method="post">
@@ -14,29 +17,29 @@
             <div class="content">
                 <div class="input-box">
                     <label for="name">nombre completo</label>
-                    <input type="text" placeholder="enter full name" name="name" required>
+                    <input type="text" placeholder="nombre completo" name="name" required>
                 </div>
                 <div class="input-box">
                     <label for="name">nombre de Usuario</label>
-                    <input type="text" placeholder="enter username" name="uname" required>
+                    <input type="text" placeholder="nombre de usuario" name="uname" required>
                 </div>
                 <div class="input-box">
                     <label for="email">email</label>
-                    <input type="email" placeholder="enter your valid email address" name="email" required>
+                    <input type="email" placeholder="dirección de correo electrónico válida" name="email" required>
                 </div>
                 <div class="input-box">
                     <label for="phonenumber">numero de telefono</label>
-                    <input type="tel" placeholder="enter phone number" name="phoneNumber" required>
+                    <input type="tel" placeholder="numero de telefono" name="phoneNumber" required>
                 </div>
                 <div class="input-box">
                     <label for="password">contraseña</label>
-                    <input type="password" placeholder="enter new password" name="password" required>
+                    <input type="password" placeholder="contraseña" name="password" required>
                 </div>
                 <div class="input-box">
                     <label for="Cpassword">confirmar contraseña</label>
-                    <input type="password" placeholder="confirm password" name="confirmpassword" required>
+                    <input type="password" placeholder="confirmar contraseña" name="confirmpassword" required>
                 </div>
-                <span class="gender-title">gender</span>
+                <span class="gender-title">genero</span>
                 <div class="gender-category">
                     <input type="radio" name="gender" id="male">
                     <label for="gender">hombre</label>
@@ -47,12 +50,12 @@
                 </div>
             </div>
             <div class="alert" >
-                <p> by clicking sing up, you agree to our <a href="terminos-condiciones.html"> term</a> 
-                    <a href="#">privacity policy</a> and <a href="#">cookies policy.</a> you 
+                <p> by clicking sing up, you agree to our term <a href="terminos-condiciones.html">privacity policy</a>
+                    and <a href="#">cookies policy.</a> you 
                     may receive SMS notifications from us and can opt out at any time.</p>
             </div>
             <div class="button-container">
-                <button type="submit">registrarse</button>
+                <a href="bienvenido.html"><button class="submit">registrarse</button></a>
             </div>
         </form>
     </div>
