@@ -9,7 +9,7 @@
 
 
 body {
-background: #fefefe;
+background: antiquewhite;
 
 }
 
@@ -73,17 +73,17 @@ footer {
   color: #fff;
   text-align: center;
   padding: 33px;
-  border-top-left-radius: 10px; /* Bordes redondeados en la esquina superior izquierda */
-  border-top-right-radius: 10px; /* Bordes redondeados en la esquina superior derecha */
+  border-top-left-radius: 10px; 
+  border-top-right-radius: 10px; 
 }
 
-/* Estilo de los elementos dentro de las secciones */
+
 .featured-books, .catalog, .authors {
   display: flex;
   justify-content: space-between;
 }
 
-/* Estilo de las tarjetas de libros destacados */
+
 .book-card {
   width: 30%;
   margin: 10px 10px;
