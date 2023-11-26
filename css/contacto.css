@@ -1,183 +1,166 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Arial", sans-serif;
+  box-sizing: border-box;
+}
 
 
-/* Estilo del cuerpo y fuente principal */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f4ec; /* Fondo beige claro */
-    color: #333;
-    line-height: 1.6;
-  }
-  
-  /* Estilo del encabezado */
-  header {
-    background-color: #d8a399; /* Fondo melocotón claro */
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  }
-  
-  header h1 {
-    font-size: 36px;
-  }
-  
-  /* Estilo de la barra de navegación */
-  nav {
-    text-align: center;
-    margin-top: 20px;
-    background-color: #d8a399; /* Fondo melocotón claro */
-    padding: 10px 0;
-  }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  nav li {
-    display: inline;
-    margin: 0 20px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #333;
-    font-size: 16px;
-    transition: color 0.2s;
-  }
-  
-  nav a:hover {
-    color: #7d584f; /* Cambio de color al pasar el mouse a otro color */
-  }
-  
-  /* Estilo de las secciones */
-  section {
-    margin: 20px;
-    padding: 20px;
-    background-color: #fff; /* Fondo blanco */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px; /* Bordes redondeados */
-  }
-  
-  section h2 {
-    font-size: 24px;
-    margin: 10px 0;
-    color: #7d584f; /* Color de título para las secciones */
-    text-transform: uppercase; /* Texto en mayúsculas */
-  }
-  
-  /* Estilo del pie de página */
-  footer {
-    background-color: #d8a399; /* Fondo melocotón claro */
-    color: #fff;
-    text-align: center;
-    padding: 33px;
-    border-top-left-radius: 10px; /* Bordes redondeados en la esquina superior izquierda */
-    border-top-right-radius: 10px; /* Bordes redondeados en la esquina superior derecha */
-  }
+background: antiquewhite;
 
-  /* Estilos para pantallas pequeñas */
-@media only screen and (max-width: 600px) {
-  body {
-      font-size: 14px;
-  }
-
-  header {
-      padding: 10px;
-  }
-
-  header h1 {
-      font-size: 28px;
-  }
-
-  nav {
-      margin-top: 10px;
-      padding: 5px 0;
-  }
-
-  nav li {
-      margin: 0 10px;
-  }
-
-  section {
-      margin: 10px;
-      padding: 10px;
-  }
-
-  section h2 {
-      font-size: 20px;
-      margin: 8px 0;
-  }
-
-  footer {
-      padding: 20px;
-  }
 }
 
-/* Estilos para pantallas medianas */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-  body {
-      font-size: 16px;
-  }
-
-  header {
-      padding: 15px;
-  }
-
-  header h1 {
-      font-size: 32px;
-  }
-
-  nav li {
-      margin: 0 15px;
-  }
-
-  section {
-      margin: 15px;
-      padding: 15px;
-  }
-
-  section h2 {
-      font-size: 22px;
-      margin: 12px 0;
-  }
-
-  footer {
-      padding: 25px;
-  }
+header {
+width: 100%;
+height: 80px;
+background: #11101b;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 100px;
+}
+.logo{
+  font-size: 28px;
+  font-weight: bold;
+  color: #fefefe;
+}
+.hamburger{
+  display: none;
+}
+.nav-bar ul {
+  display: flex;
+}
+.nav-bar ul li a {
+  display: block;
+  color: #fefefe;
+  font-size: 20px;
+  padding: 10px 25px;
+  border-radius: 50px;
+  transition: 0.2s;
+  margin: 0 5px; 
 }
 
-/* Estilos para pantallas grandes */
-@media only screen and (min-width: 1025px) {
-  body {
-      font-size: 18px;
-  }
-
-  header {
-      padding: 20px;
-  }
-
-  header h1 {
-      font-size: 36px;
-  }
-
-  nav li {
-      margin: 0 20px;
-  }
-
-  section {
-      margin: 20px;
-      padding: 20px;
-  }
-
-  section h2 {
-      font-size: 24px;
-      margin: 15px 0;
-  }
-
-  footer {
-      padding: 30px;
-  }
+.nav-bar ul li a:hover {
+  color: #11101b; 
+  background: #fefefe;
 }
+.nav-bar ul li a.active {
+  color: #11101b;
+  background: #fefefe;
+}
+
+
+
+.contact-options {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px;
+  padding: 20px;
+}
+
+.contact-options h1 {
+  font-size: 32px;
+  color: #11101b;
+  margin-bottom: 20px;
+}
+
+.contact-method {
+  margin-bottom: 20px;
+}
+
+.contact-method h2 {
+  font-size: 24px;
+  color: #11101b;
+  margin-bottom: 10px;
+}
+
+.contact-method p {
+  color: #444;
+}
+
+.contact-method ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-method li {
+  margin-bottom: 10px;
+}
+
+.contact-method a {
+  color: #007bff; 
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-method a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #11101b;
+  color: #fefefe;
+  text-align: center;
+  padding: 10px;
+  border-top: 2px solid #fefefe;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+ 
+@media only screen and (max-width : 1320px) {
+  header { padding: 0 50px;
+  }
+  }
+  @media only screen and (max-width : 1100px) {
+  header { padding: 0 30px;
+  }
+  }
+  @media only screen and (max-width : 900px) {
+  .hamburger { display: block;
+    cursor: pointer;
+  }
+  .hamburger .line {
+    width: 30px;
+    height: 3px;
+    background: #fefefe;
+    margin: 6px 0;
+  }
+  .nav-bar{
+    height: 0;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background: #11101b;
+    transition: 0.5s;
+    overflow: hidden;
+  }
+  .nav-bar.active{
+    height: 450px;
+  }
+  .nav-bar ul {
+    display: block;
+    width: fit-content;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+  }
+  .nav-bar.active ul{
+    opacity: 1;
+  
+  }
+  .nav-bar ul li a {
+    margin-bottom: 12px;
+  }
+  }
+  
+  

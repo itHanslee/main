@@ -10,6 +10,32 @@
         <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
     </head>
     <body>
+
+        <header>
+            <div class="logo">EL BÚHO</div>
+            <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            </div>
+             <nav class="nav-bar">
+                <ul>
+                    <li><a href="bienvenido.html" class="active"> inicio</a></li>
+                    <li><a href="Catalogo.html">libros</a></li>
+                    <li><a href="nosotros.html">nosotros</a></li>
+                    <li><a href="Contacto.html">servicio</a></li>
+                    <li><a href="reseñas.html">reseñas</a></li>
+                    <li><a href="inicio.html">iniciar sesion</a></li>
+                </ul>
+            </nav>    
+            <script>
+                hamburger = document.querySelector(".hamburger");
+                hamburger.onclick = function () {
+                    navBar = document.querySelector(".nav-bar");
+                    navBar.classList.toggle("active");
+                }</script>
+        </header>
+
         <div class = "main-container">
             <h2>Catalogo</h2>
             <div class = "filter-container">
@@ -88,7 +114,7 @@
 
                             <div class = "post-content">
                                 <div class = "post-content-top">
-                                    <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                    <span><i class = "fas fa-calendar"></i>Mayo 10, 2022</span>
                                     <span>
                                         <i class = "fas fa-comment"></i>34
                                     </span>
@@ -98,8 +124,6 @@
                             </div>
                             <button type = "button" class = "read-btn">Comprar</button>
                         </div>
-                        <!-- end of single post -->
-                        <!-- single post -->
                         <div class = "all ciencia-ficcion">
                             <div class = "post-img">
                                 <img src = "imagen/folagor.jpg" alt = "post">
@@ -108,7 +132,7 @@
 
                             <div class = "post-content">
                                 <div class = "post-content-top">
-                                    <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                    <span><i class = "fas fa-calendar"></i>septiembre 5, 2017</span>
                                     <span>
                                         <i class = "fas fa-comment"></i>34
                                     </span>
@@ -118,8 +142,6 @@
                             </div>
                             <button type = "button" class = "read-btn">comprar</button>
                         </div>
-                        <!-- end of single post -->
-                        <!-- single post -->
                         <div class = "all ciencia-ficcion">
                             <div class = "post-img">
                                 <img src = "imagen/animales.jpg" alt = "post">
@@ -138,8 +160,6 @@
                             </div>
                             <button type = "button" class = "read-btn">comprar</button>
                         </div>
-                        <!-- end of single post -->
-                        <!-- single post -->
                         <div class = "all ciencia-ficcion">
                             <div class = "post-img">
                                 <img src = "imagen/gigante.webp" alt = "post">
@@ -158,11 +178,9 @@
                             </div>
                             <button type = "button" class = "read-btn">comprar</button>
                         </div>
-                        <!-- end of single post -->
-                        <!-- single post -->
                         <div class = "all ciencia-ficcion">
                             <div class = "post-img">
-                                <img src = "images/culture-4.jpg" alt = "post">
+                                <img src = "imagen/principito.jpg" alt = "post">
                                 <span class = "category-name">ciencia ficcion</span>
                             </div>
 
@@ -178,8 +196,6 @@
                             </div>
                             <button type = "button" class = "read-btn">comprar</button>
                         </div>
-                        <!-- end of single post -->
-                        <!-- single post -->
                         <div class = "all terror">
                             <div class = "post-img">
                                 <img src = "imagen/king.webp" alt = "post">
@@ -196,10 +212,8 @@
                                 <h2>Lorem ipsum dolor sit amet</h2>
                                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!</p>
                             </div>
-                            <button type = "button" class = "read-btn">Read All</button>
+                            <button type = "button" class = "read-btn">Comprar</button>
                         </div>
-                        <!-- end of single post -->
-                        <!-- single post -->
                         <div class = "all terror">
                             <div class = "post-img">
                                 <img src = "imagen/ojos de plata.jpg" alt = "post">
@@ -216,10 +230,8 @@
                                 <h2>Lorem ipsum dolor sit amet</h2>
                                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!</p>
                             </div>
-                            <button type = "button" class = "read-btn">Read All</button>
+                            <button type = "button" class = "read-btn">Comprar</button>
                         </div>
-                        <!-- end of single post -->
-                        <!-- single post -->
                         <div class = "all terror">
                             <div class = "post-img">
                                 <img src = "imagen/twisted.jpg" alt = "post">
@@ -238,11 +250,9 @@
                             </div>
                             <button type = "button" class = "read-btn">Read All</button>
                         </div>
-                        <!-- end of single post -->
-                        <!-- single post -->
                         <div class = "all historia">
                             <div class = "post-img">
-                                <img src = "images/politics-1.jpg" alt = "post">
+                                <img src = "imagen/solo.webp" alt = "post">
                                 <span class = "category-name">Historia</span>
                             </div>
 
@@ -258,8 +268,6 @@
                             </div>
                             <button type = "button" class = "read-btn">comprar</button>
                         </div>
-                        <!-- end of single post -->
-                        <!-- single post -->
                         <div class = "all historia">
                             <div class = "post-img">
                                 <img src = "imagen/teoria del todo.jpg" alt = "post">
@@ -278,11 +286,9 @@
                             </div>
                             <button type = "button" class = "read-btn">comprar </button>
                         </div>
-                        <!-- end of single post -->
-                        <!-- single post -->
                         <div class = "all historia">
                             <div class = "post-img">
-                                <img src = "images/politics-3.jpg" alt = "post">
+                                <img src = "imagen/rey.jpg" alt = "post">
                                 <span class = "category-name">Historia</span>
                             </div>
 
@@ -298,11 +304,9 @@
                             </div>
                             <button type = "button" class = "read-btn">Comprar</button>
                         </div>
-                        <!-- end of single post -->
-                        <!-- single post -->
                         <div class = "all historia">
                             <div class = "post-img">
-                                <img src = "images/politics-4.jpg" alt = "post">
+                                <img src = "imagen/marciano.jpg" alt = "post">
                                 <span class = "category-name">Historia</span>
                             </div>
 

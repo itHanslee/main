@@ -9,11 +9,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
-<header>
-
-</header>
-
 <body> 
+
+    <header>
+        <div class="logo">EL BÚHO</div>
+        <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        </div>
+         <nav class="nav-bar">
+            <ul>
+                <li><a href="bienvenido.html" class="active"> inicio</a></li>
+                <li><a href="Catalogo.html">libros</a></li>
+                <li><a href="nosotros.html">nosotros</a></li>
+                <li><a href="Contacto.html">servicio</a></li>
+                <li><a href="reseñas.html">reseñas</a></li>
+                <li><a href="inicio.html">iniciar sesion</a></li>
+            </ul>
+        </nav>    
+        <script>
+            hamburger = document.querySelector(".hamburger");
+            hamburger.onclick = function () {
+                navBar = document.querySelector(".nav-bar");
+                navBar.classList.toggle("active");
+            }</script>
+    </header>
+
     <section class="presentacion">
         <h2>El Búho</h2>
         <div class="section-content">

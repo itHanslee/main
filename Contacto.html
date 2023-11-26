@@ -7,11 +7,30 @@
     <link rel="stylesheet" type="text/css" href="css/contacto.css">
 </head>
 <body>
+
     <header>
-        <nav>
+        <div class="logo">EL BÚHO</div>
+        <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        </div>
+         <nav class="nav-bar">
             <ul>
+                <li><a href="bienvenido.html" class="active"> inicio</a></li>
+                <li><a href="Catalogo.html">libros</a></li>
+                <li><a href="nosotros.html">nosotros</a></li>
+                <li><a href="Contacto.html">servicio</a></li>
+                <li><a href="reseñas.html">reseñas</a></li>
+                <li><a href="inicio.html">iniciar sesion</a></li>
             </ul>
-        </nav>
+        </nav>    
+        <script>
+            hamburger = document.querySelector(".hamburger");
+            hamburger.onclick = function () {
+                navBar = document.querySelector(".nav-bar");
+                navBar.classList.toggle("active");
+            }</script>
     </header>
 
     <section class="contact-options">
