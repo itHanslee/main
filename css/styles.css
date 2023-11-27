@@ -186,3 +186,16 @@ header { padding: 0 30px;
   margin-bottom: 12px;
 }
 }
+
+
+@media screen and (max-width: 1080px) {
+  .book-card {
+      width: 45%; /* Cambia el ancho para pantallas medianas */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .book-card {
+      width: 100%; /* Cambia el ancho para pantallas pequeñas */
+  }
+}
