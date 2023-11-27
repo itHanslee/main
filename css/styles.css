@@ -188,14 +188,8 @@ header { padding: 0 30px;
 }
 
 
-@media screen and (max-width: 1080px) {
+@media screen and (min-width: 480px) and (max-width: 1386px) {
   .book-card {
-      width: 45%; /* Cambia el ancho para pantallas medianas */
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .book-card {
-      width: 100%; /* Cambia el ancho para pantallas pequeñas */
+      width: 48%;
   }
 }
