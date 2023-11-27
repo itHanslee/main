@@ -1,68 +1,107 @@
 
 
-
-section {
-  margin: 10px 10px 20px; 
-  padding: 20px;
-  background-color: #fff; 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-  border-radius: 10px; 
-  overflow: hidden; 
+/* Estilos para pantallas grandes */
+@media only screen and (min-width: 1381px) {
+  /* Agrega aquí estilos específicos para pantallas grandes si es necesario */
 }
 
-section h2 {
-  font-size: 24px;
-  margin: 10px 0;
-  color: #7d584f; 
-  text-transform: uppercase;
+/* Estilos para pantallas medianas */
+@media only screen and (max-width: 1380px) and (min-width: 769px) {
+  body {
+    padding: 0 20px; /* Ajusta el espaciado del cuerpo para pantallas medianas */
+  }
+
+  header {
+    padding: 0 20px; /* Ajusta el espaciado del encabezado para pantallas medianas */
+  }
+
+  .nav-bar ul {
+    flex-direction: column; /* Cambia la dirección del menú para pantallas medianas */
+    align-items: center;
+  }
+
+  .nav-bar ul li {
+    margin: 5px 0; /* Ajusta el espaciado entre elementos de menú para pantallas medianas */
+  }
+
+  .logo {
+    font-size: 24px; /* Ajusta el tamaño del logo para pantallas medianas */
+  }
+  
+  .hamburger {
+    display: block; /* Muestra el ícono del menú hamburguesa para pantallas medianas */
+  }
 }
 
-.presentacion,
-.colaboradores {
-  margin: 25px auto; 
-  width: 90%; 
+/* Estilos para pantallas pequeñas */
+@media only screen and (max-width: 768px) {
+  body {
+    padding: 0 10px; /* Ajusta el espaciado del cuerpo para pantallas pequeñas */
+  }
+
+  header {
+    padding: 0 10px; /* Ajusta el espaciado del encabezado para pantallas pequeñas */
+  }
+
+  .nav-bar {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: #11101b;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-bar.active {
+    display: flex;
+  }
+
+  .nav-bar ul {
+    flex-direction: column; /* Cambia la dirección del menú para pantallas pequeñas */
+    align-items: center;
+  }
+
+  .nav-bar ul li {
+    margin: 5px 0; /* Ajusta el espaciado entre elementos de menú para pantallas pequeñas */
+  }
+
+  .logo {
+    font-size: 20px; /* Ajusta el tamaño del logo para pantallas pequeñas */
+  }
+
+  .hamburger {
+    display: block; /* Muestra el ícono del menú hamburguesa para pantallas pequeñas */
+  }
+
+  .nav-bar ul li a {
+    padding: 10px 10px; /* Ajusta el espaciado de los elementos de menú para pantallas pequeñas */
+  }
+
+  .presentacion,
+  .colaboradores {
+    width: 100%; /* Haz que las secciones ocupen el 100% del ancho para pantallas pequeñas */
+  }
+
+  .presentacion img,
+  .colaboradores img {
+    max-width: 100%; /* Haz que las imágenes ocupen el 100% del ancho para pantallas pequeñas */
+    margin-right: 0; /* Elimina el margen derecho para pantallas pequeñas */
+    float: none; /* Elimina la flotación para pantallas pequeñas */
+  }
+
+  .colaboradores .section-content p {
+    display: block; /* Ajusta la visualización de los párrafos para pantallas pequeñas */
+  }
+
+  .distribuidora {
+    max-width: 100%; /* Haz que la imagen de la distribuidora ocupe el 100% del ancho para pantallas pequeñas */
+    float: none; /* Elimina la flotación para pantallas pequeñas */
+    margin-right: 0; /* Elimina el margen derecho para pantallas pequeñas */
+  }
 }
 
-.presentacion img{
-  max-width: 320px;
-  float: left;
-  border: 3px solid black;
-  border-radius: 10px;
-  margin-right: 15px;
-}
-
-.colaboradores img {
-  max-width: 200px;
-  float: left;
-  border: 3px solid black;
-  border-radius: 10px;
-  margin-right: 15px;
-}
-
-.presentacion .section-content h2,
-.colaboradores .section-content h2 {
-  font-size: 32px;
-}
-
-.presentacion .section-content p,
-.colaboradores .section-content p {
-  font-size: 16px;
-}
-
-.colaboradores .section-content p{
-  display: flex;
-  align-items: center;
-}
-
-.distribuidora {
-  max-width: 400px;
-  float: right;
-  margin-right: 20px;
-
-}
-
-footer {
-  background-color: #d8a399;
   color: #fff;
   text-align: center;
   padding: 20px; 
