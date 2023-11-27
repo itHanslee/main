@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="imagen/logo.ico.jpeg">
-    <script src="#"></script>
     <title>El Búho</title>
 </head>
 <body>
@@ -24,7 +23,11 @@
                 <li><a href="./pages/nosotros.html">nosotros</a></li>
                 <li><a href="./pages/Contacto.html">servicio</a></li>
                 <li><a href="./pages/reseñas.html">reseñas</a></li>
-                <li><a href="./pages/inicio.html">iniciar sesion</a></li>
+                <button id="sesion"><a href="./pages/inicio.html">iniciar sesion</a></button>
+                <div display="none" id="usuario" >
+                    <p></p>
+                </div>  
+                <button class="" id="logout" style="display: none;">cerrar sesion</button>
             </ul>
         </nav>    
         <script>
@@ -64,7 +67,6 @@
         <div class="book-card">
             <h3>jujutsu kaisen 4</h3>
             <img src="imagen/gojo.jpg" alt="jujutsu kaisen 4" width="40%">
-            <!-- Añade la descripción del libro -->
             <strong><a href="bienvenida/comprar.html"><button><p>Precio: $76.000</p></button></a></strong>
         </div>
         <div class="book-card">
@@ -139,5 +141,6 @@
         <p>&copy; 2023 Tu Distribuidora de Libros</p>
         
     </footer>
+    <script src="../palabras con proposito/main/navbar.js"></script>
 </body>
 </html>

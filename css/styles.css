@@ -103,6 +103,11 @@ padding: 0 100px;
   }
   }
 
+  #usuario {
+    color: white;
+    font-size: 15px;
+  }
+
 section {
   margin: 20px;
   padding: 20px;
