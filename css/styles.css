@@ -11,6 +11,7 @@
 body {
 background: antiquewhite;
 
+
 }
 
 header {
@@ -51,6 +52,56 @@ padding: 0 100px;
   color: #11101b;
   background: #fefefe;
 }
+
+ 
+@media only screen and (max-width : 1320px) {
+  header { padding: 0 50px;
+  }
+  }
+  @media only screen and (max-width : 1100px) {
+  header { padding: 0 30px;
+  }
+  }
+  @media only screen and (max-width : 900px) {
+  .hamburger { display: block;
+    cursor: pointer;
+  }
+  .hamburger .line {
+    width: 30px;
+    height: 3px;
+    background: #fefefe;
+    margin: 6px 0;
+  }
+  .nav-bar{
+    height: 0;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background: #11101b;
+    transition: 0.5s;
+    overflow: hidden;
+  }
+  .nav-bar.active{
+    height: 450px;
+  }
+  .nav-bar ul {
+    display: block;
+    width: fit-content;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+  }
+  .nav-bar.active ul{
+    opacity: 1;
+  
+  }
+  .nav-bar ul li a {
+    margin-bottom: 12px;
+  }
+  }
 
 section {
   margin: 20px;
@@ -137,52 +188,45 @@ button {
   text-transform: uppercase;
 }
 
- 
-@media only screen and (max-width : 1320px) {
-  header { padding: 0 50px;
+ /* Estilos generales que aplican a todos los tamaños de pantalla */
+
+/* Estilos para pantallas más grandes (desde 1380px) */
+@media only screen and (min-width: 1380px) {
+  body {
+    /* Estilos específicos para dispositivos de 1380px de ancho o más */
+    font-size: 18px; /* Puedes ajustar el tamaño de la fuente según tus necesidades */
   }
+
+  header {
+    font-size: 16px;
   }
-  @media only screen and (max-width : 1100px) {
-  header { padding: 0 30px;
+
+  .book-card {
+    /* Ajusta el estilo de las tarjetas de libros para pantallas más grandes */
+    width: 30%; /* Puedes ajustar el ancho según tus necesidades */
   }
+
+  /* Agrega más estilos específicos para pantallas más grandes según sea necesario */
+}
+
+/* Estilos generales que aplican a todos los tamaños de pantalla */
+
+/* Estilos para pantallas más pequeñas (hasta 480px) */
+@media only screen and (max-width: 480px) {
+  body {
+    /* Estilos específicos para dispositivos de hasta 480px de ancho */
+    font-size: 14px;
   }
-  @media only screen and (max-width : 900px) {
-  .hamburger { display: block;
-    cursor: pointer;
-  }
-  .hamburger .line {
-    width: 30px;
-    height: 3px;
-    background: #fefefe;
-    margin: 6px 0;
-  }
-  .nav-bar{
-    height: 0;
-    position: absolute;
-    top: 80px;
-    left: 0;
-    right: 0;
-    width: 100vw;
-    background: #11101b;
-    transition: 0.5s;
-    overflow: hidden;
-  }
-  .nav-bar.active{
-    height: 450px;
-  }
-  .nav-bar ul {
-    display: block;
-    width: fit-content;
-    margin: 80px auto 0 auto;
-    text-align: center;
-    transition: 0.5s;
-    opacity: 0;
-  }
-  .nav-bar.active ul{
-    opacity: 1;
+
+  header {
   
+    font-size: 16px;
   }
-  .nav-bar ul li a {
-    margin-bottom: 12px;
+
+  .book-card {
+    /* Ajusta el estilo de las tarjetas de libros para pantallas más pequeñas */
+    width: 100%; /* Puedes ajustar el ancho según tus necesidades */
   }
-  }
+
+  /* Agrega más estilos específicos para pantallas más pequeñas según sea necesario */
+}

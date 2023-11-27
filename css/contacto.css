@@ -1,4 +1,11 @@
+body{
+  flex-wrap: wrap;
+}
 
+section{
+  min-width: 480px;
+
+}
 
 .contact-options {
   background-color: #fff;
@@ -48,15 +55,5 @@
   text-decoration: underline;
 }
 
-footer {
-  background-color: #11101b;
-  color: #fefefe;
-  text-align: center;
-  padding: 10px;
-  border-top: 2px solid #fefefe;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
 
- 
+  
