@@ -19,6 +19,12 @@
   z-index: -1;
 }
 
+@keyframes animatebg {
+  100%{
+    filter: hue-rotate(360eg);
+  }
+}
+
 
 .login-box {
     position: relative;
