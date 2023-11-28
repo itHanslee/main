@@ -103,29 +103,58 @@ padding: 0 100px;
   }
   }
 
+  .netero{
+    background-color: #11101b;
+    display: block;
+    color: #fefefe;
+    font-size: 18px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+    text-transform: none;
+  }
+
+  .meruen{
+    background-color: #11101b;
+    display: block;
+    color: #fefefe;
+    font-size: 18px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+    text-transform: none;
+  }
+
   #usuario {
-    color: white;
-    font-size: 15px;
+    display: block;
+    color: #fefefe;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
   }
 
 section {
   margin: 20px;
   padding: 20px;
-  background-color: #fff; /* Fondo blanco */
+  background-color: #fff; 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px; /* Bordes redondeados */
+  border-radius: 10px; 
 }
 
 section h2 {
   font-size: 24px;
   margin: 10px 0;
-  color: #7d584f; /* Color de título para las secciones */
-  text-transform: uppercase; /* Texto en mayúsculas */
+  color: #7d584f; 
+  text-transform: uppercase; 
 }
 
-/* Estilo del pie de página */
+
 footer {
-  background-color: #d8a399; /* Fondo melocotón claro */
+  background-color: #d8a399; 
   color: #fff;
   text-align: center;
   padding: 33px;
@@ -182,7 +211,6 @@ button:hover {
 }
 
 
-/* Estilo de los botones */
 button {
   display: inline-block;
   text-align: center;
@@ -193,13 +221,9 @@ button {
   text-transform: uppercase;
 }
 
- /* Estilos generales que aplican a todos los tamaños de pantalla */
-
-/* Estilos para pantallas más grandes (desde 1380px) */
 @media only screen and (min-width: 1380px) {
   body {
-    /* Estilos específicos para dispositivos de 1380px de ancho o más */
-    font-size: 18px; /* Puedes ajustar el tamaño de la fuente según tus necesidades */
+    font-size: 18px; 
   }
 
   header {
@@ -207,19 +231,13 @@ button {
   }
 
   .book-card {
-    /* Ajusta el estilo de las tarjetas de libros para pantallas más grandes */
-    width: 30%; /* Puedes ajustar el ancho según tus necesidades */
+    width: 30%;
   }
 
-  /* Agrega más estilos específicos para pantallas más grandes según sea necesario */
 }
 
-/* Estilos generales que aplican a todos los tamaños de pantalla */
-
-/* Estilos para pantallas más pequeñas (hasta 480px) */
 @media only screen and (max-width: 480px) {
   body {
-    /* Estilos específicos para dispositivos de hasta 480px de ancho */
     font-size: 14px;
   }
 
@@ -229,9 +247,7 @@ button {
   }
 
   .book-card {
-    /* Ajusta el estilo de las tarjetas de libros para pantallas más pequeñas */
-    width: 100%; /* Puedes ajustar el ancho según tus necesidades */
+    width: 100%; 
   }
 
-  /* Agrega más estilos específicos para pantallas más pequeñas según sea necesario */
 }
