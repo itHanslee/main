@@ -103,23 +103,25 @@ padding: 0 100px;
   }
   }
 
-  .netero{
+  .netero {
     background-color: #11101b;
     display: block;
     color: #fefefe;
-    font-size: 18px;
+    font-size: 20px;
     padding: 10px 25px;
     border-radius: 50px;
     transition: 0.2s;
     margin: 0 5px;
     text-transform: none;
+    text-decoration: none;
   }
+  
 
   .meruen{
     background-color: #11101b;
     display: block;
     color: #fefefe;
-    font-size: 18px;
+    font-size: 20px;
     padding: 10px 25px;
     border-radius: 50px;
     transition: 0.2s;
@@ -132,7 +134,6 @@ padding: 0 100px;
     color: #fefefe;
     font-size: 20px;
     padding: 10px 25px;
-    border-radius: 50px;
     transition: 0.2s;
     margin: 0 5px;
   }
@@ -174,7 +175,7 @@ footer {
   margin: 10px 10px;
   padding: 20px;
   border: 1px solid #ddd;
-  background-color: #f9f9f9; /* Fondo gris claro para las tarjetas de libros */
+  background-color: #f9f9f9; 
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
   text-align: center;
@@ -188,8 +189,8 @@ footer {
 .book-card h3 {
   font-size: 18px;
   margin: 10px 0;
-  color: #7d584f; /* Color de título para las tarjetas de libros */
-  text-transform: uppercase; /* Texto en mayúsculas */
+  color: #7d584f;
+  text-transform: uppercase;
 }
 
 .book-card p {
@@ -221,33 +222,11 @@ button {
   text-transform: uppercase;
 }
 
-@media only screen and (min-width: 1380px) {
-  body {
-    font-size: 18px; 
-  }
-
-  header {
-    font-size: 16px;
-  }
-
-  .book-card {
-    width: 30%;
-  }
-
-}
-
-@media only screen and (max-width: 480px) {
-  body {
-    font-size: 14px;
-  }
-
-  header {
+@media(max-width: 1170px){
   
-    font-size: 16px;
+}
+@media(max-width: 768px){
+  .button{
+    font-size: 16;
   }
-
-  .book-card {
-    width: 100%; 
-  }
-
 }

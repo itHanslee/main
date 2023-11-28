@@ -3,8 +3,7 @@
   img{width: 100%;
   }
   
-
-.main-container{
+  .main-container{
     width: 90vw;
     margin: 0 auto;
     padding: 40px 0;
@@ -134,8 +133,6 @@
     header { padding: 0 50px;
     }
 }
-
-
 
 
 @media(max-width: 768px){

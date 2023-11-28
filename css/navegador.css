@@ -56,7 +56,7 @@
     background-color: #11101b;
     display: block;
     color: #fefefe;
-    font-size: 18px;
+    font-size: 20px;
     padding: 10px 25px;
     border-radius: 50px;
     transition: 0.2s;
@@ -65,15 +65,7 @@
   }
 
   .meruen{
-    background-color: #11101b;
-    display: block;
-    color: #fefefe;
-    font-size: 18px;
-    padding: 10px 25px;
-    border-radius: 50px;
-    transition: 0.2s;
-    margin: 0 5px;
-    text-transform: none;
+
   }
 
   #usuario {
@@ -81,10 +73,10 @@
     color: #fefefe;
     font-size: 20px;
     padding: 10px 25px;
-    border-radius: 50px;
     transition: 0.2s;
     margin: 0 5px;
   }
+
 
    
 @media only screen and (max-width : 1320px) {

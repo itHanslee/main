@@ -2,6 +2,7 @@ body{
   flex-wrap: wrap;
 }
 
+
 section{
   min-width: 480px;
 
@@ -55,5 +56,11 @@ section{
   text-decoration: underline;
 }
 
+@media (width < 1380px){
 
+}
+
+@media (width < 480px) {
+ 
+}
   
