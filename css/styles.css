@@ -45,7 +45,7 @@ padding: 0 100px;
 }
 
 .nav-bar ul li a:hover {
-  color: #11101b; /* Cambio de color al pasar el mouse a otro color */
+  color: #11101b; 
   background: #fefefe;
 }
 .nav-bar ul li a.active {
@@ -222,11 +222,4 @@ button {
   text-transform: uppercase;
 }
 
-@media(max-width: 1170px){
-  
-}
-@media(max-width: 768px){
-  .button{
-    font-size: 16;
-  }
-}
+

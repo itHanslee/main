@@ -60,6 +60,8 @@ section h2 {
 
 }
 
+
+
 footer {
   background-color: #d8a399;
   color: #fff;
@@ -67,8 +69,9 @@ footer {
   padding: 20px; 
   margin-top: 20px; 
 }
-
-
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width:1380px) and (min-width:500px) {
+  section{
+    font-size: 16px;
+  }
+  
 }

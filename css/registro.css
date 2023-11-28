@@ -69,13 +69,14 @@ body{
 }
 .formulario .bottons{
   width: 100%;
-  background: rgb(34, 12, 27);
+  background: #000;
   border: none;
   padding: 12px;
   color: antiquewhite;
   margin: 16px 0;
   font-size: 16px;
-
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 
@@ -87,7 +88,6 @@ body{
   font-family: 'Times New Roman', Times, serif;
 }
 
-/** esto pertenece a los estilos del formulario de iniciar seccion de la parte de abajo*/
 .formulario p{
   color: rgb(26, 72, 116);
   text-decoration: none;
