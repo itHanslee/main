@@ -26,8 +26,6 @@
 }
 
 body{
-  background: linear-gradient(to left, rgba(207, 233, 241, 0.8), rgba(0,0,0,0.1)),
-  url(img/banner.png) no-repeat;
   background-size: cover;
   background-position: center;
    
